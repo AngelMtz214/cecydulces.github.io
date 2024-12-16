@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="proyecto.css" rel="stylesheet" type="text/css" />
+    <style>
+        a.btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        a.btn:hover {
+            background-color: #0056b3;
+        }
+        header {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        header ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        header li {
+            display: inline-block;
+            color: white;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .login-form {
+            width: 300px;
+            padding: 30px;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 10px 0px #000;
+        }
+        .login-form h1 {
+            text-align: center;
+        }
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+        }
+        .login-form button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #0099ff;
+            border: 0;
+            color: #ffffff;
+        }
+    </style>       
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="index.html" class="btn">Regresar</a></li>
+        </ul>
+    </header>
+    <div class="login-form">
+        <h1>Registro de usuario</h1>
+        <form>
+            <input type="text" placeholder="Nombre de usuario" required><br>
+            <input type="text" placeholder="Correo electrónico" required><br>
+            <input type="password" placeholder="Contraseña" required><br>
+            <input type="password" placeholder="Confirmar contraseña" required><br>
+            <button type="submit">Registrarse</button>
+        </form>
+    </div>
+</body>
+</html>
